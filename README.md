@@ -15,12 +15,12 @@
 4. Using a framework is allowed
 
 -------------------------------
-Test completed within 72 Hours 
+Test completed within required 72 Hours 
 
 Hovers and it's interpretations were demonstrated
 
-Website is accessible and even "Tab button" was taken into account in all neccesary elements.
+Website is accessible and the Tab button was taken into account in all neccesary elements.
 
 Tailwind.css Framework was used .
 
-Unfortunately, while trying to make the website accessible, I encountered a bug that made my dropdown hamburger menu fail,  Currently debbuging it and would update file when done
+
