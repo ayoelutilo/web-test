@@ -90,6 +90,9 @@
         display: inline-block;
         margin-top: 5px;
     }
+    a.cta {
+        display: block
+    }
 }
 
 @media (min-width: 959px) {
@@ -235,6 +238,11 @@ header {
     cursor: pointer;
 }
 
+button.banner-btn:hover {
+    background-color: #88b04b;
+    border: thin solid #9cbd6b;
+}
+
 ul li {
     display: inline-block;
 }
@@ -263,11 +271,8 @@ ul li ul li a {
     text-decoration: none;
 }
 
-.dropdown-menu .menu-item:hover {
-    width: auto;
-    background-color: rgb(247, 247, 247);
-    border-left: 3px solid #88b04b;
-    padding: 10px 22px;
+.cta {
+    background-color: #88b04b;
 }
 
 .menu-item {
@@ -277,6 +282,12 @@ ul li ul li a {
 
 ul.dropdown-menu {
     padding: 5px 0px;
+}
+
+#navbar-btn {
+    border-color: #404f5e;
+    color: #404f5e;
+    border-width: 2px;
 }
 
 
@@ -440,4 +451,134 @@ footer p {
 .footer-item p span {
     font-size: 13em;
     opacity: 0.5;
+}
+
+
+/* Animation*/
+
+
+/* ----------------------------------------------
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+@-webkit-keyframes slide-in-blurred-top {
+    0% {
+        -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(.2);
+        transform: translateY(-1000px) scaleY(2.5) scaleX(.2);
+        -webkit-transform-origin: 50% 0;
+        transform-origin: 50% 0;
+        -webkit-filter: blur(40px);
+        filter: blur(40px);
+        opacity: 0
+    }
+    100% {
+        -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+        transform: translateY(0) scaleY(1) scaleX(1);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        opacity: 1
+    }
+}
+
+@keyframes slide-in-blurred-top {
+    0% {
+        -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(.2);
+        transform: translateY(-1000px) scaleY(2.5) scaleX(.2);
+        -webkit-transform-origin: 50% 0;
+        transform-origin: 50% 0;
+        -webkit-filter: blur(40px);
+        filter: blur(40px);
+        opacity: 0
+    }
+    100% {
+        -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+        transform: translateY(0) scaleY(1) scaleX(1);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes scale-in-tl {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0;
+        opacity: 1
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0;
+        opacity: 1
+    }
+}
+
+@keyframes scale-in-tl {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0;
+        opacity: 1
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0;
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes scale-in-top {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        -webkit-transform-origin: 50% 0;
+        transform-origin: 50% 0;
+        opacity: 1
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: 50% 0;
+        transform-origin: 50% 0;
+        opacity: 1
+    }
+}
+
+@keyframes scale-in-top {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        -webkit-transform-origin: 50% 0;
+        transform-origin: 50% 0;
+        opacity: 1
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: 50% 0;
+        transform-origin: 50% 0;
+        opacity: 1
+    }
+}
+
+.slide-in-blurred-top {
+    -webkit-animation: slide-in-blurred-top 1s cubic-bezier(.23, 1.000, .32, 1.000) both;
+    animation: slide-in-blurred-top 1s cubic-bezier(.23, 1.000, .32, 1.000) both
+}
+
+.scale-in-top {
+    -webkit-animation: scale-in-top .2s cubic-bezier(.55, .085, .68, .53) both;
+    animation: scale-in-top .2s cubic-bezier(.55, .085, .68, .53) both
 }
