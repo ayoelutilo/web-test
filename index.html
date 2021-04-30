@@ -5,99 +5,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="text/css" href="css/style.css" rel="stylesheet">
-    <link type="text/css" href="css/menu.css" rel="stylesheet">
-    <link href="css/tailwind.css" rel="stylesheet">
-    <link href="http://fonts.cdnfonts.com/css/sofia-pro" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link type="text/css " href="css/style.css " rel="stylesheet ">
+    <link type="text/css " href="css/menu.css " rel="stylesheet ">
+    <link href="css/tailwind.css " rel="stylesheet ">
+    <link href="http://fonts.cdnfonts.com/css/sofia-pro " rel="stylesheet ">
+    <link rel="stylesheet " href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css ">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js "></script>
 
- 
-    <title>Fullscript</title>
+    <!-- Bootstrap CSS 
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css " rel="stylesheet " integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6 " crossorigin="anonymous ">
+    -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300i,400,700&display=swap " rel="stylesheet ">
+    <link rel="stylesheet " href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css ">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css " rel="stylesheet ">
+    <title>Document</title>
 </head>
 
 <body>
-    <header>
-        <div class="menu-container ">
 
-            <div class="row-menu p-2 item-center">
-                <div class="row-menu-inner">
-
-                    <div class="logo">
-                        <img class="img-responsive" src="https://fullscript.com/wp-content/uploads/2017/08/full-color.svg" alt="logo" width="2600" height="447">
-
-                    </div>
+    <nav class="md:w-10/12 mx-auto flex items-center justify-between flex-wrap bg-grey p-6 ">
 
 
 
 
-                    <nav>
-                        <div class="main-menu">
-                            <ul id="prim-menu" class="primary-menu ">
-                                <li class="menu-item">
-                                    <a class="dropdown-toggle" href="#" data-toggle="dropdown" data-type="title" title="Lorem ipsum">Lorem ipsum
-                                        <img src="https://img.icons8.com/ios-glyphs/30/404f5e/chevron-down.png" style="height:17px; padding:2px; display: inline-flex; padding-top: 5px;"/>
-                                    </a>
-                                    <ul role="menu" class="dropdown-menu">
-                                        <li class="menu-item"><a href="#">Lorem ipsum</a></li>
-                                        <li class="menu-item"><a href="#">Lorem ipsum</a></li>
-                                        <li class="menu-item"><a href="#">Lorem ipsum</a></li>
-                                        <li class="menu-item"><a href="#">Lorem ipsum</a></li>
-                                        <li class="menu-item"><a href="#">Lorem ipsum</a></li>
-                                        <li class="menu-item"><a href="#">Lorem ipsum</a></li>
-                                        <li class="menu-item"><a href="#">Lorem ipsum</a></li>
+        <div class="relative items-center justify-center flex-shrink-0 text-white mr-6 ">
+            <div class="logo scale-in-tl " tabindex="0 ">
+                <img class="img-responsive " src="https://fullscript.com/wp-content/uploads/2017/08/full-color.svg " alt="logo " width="2600 " height="447 ">
 
-                                    </ul>
-                                </li>
-                                <li class="menu-item">
-                                    <a class="dropdown-toggle" href="#" data-toggle="dropdown" data-type="title" title="Lorem ipsum">
-                                        Lorem ipsum 
-                                        <img src="https://img.icons8.com/ios-glyphs/30/404f5e/chevron-down.png" style="height:17px; padding:2px; display: inline-flex; padding-top: 5px;"/>
-                                    </a>
-                                    <ul role="menu" class="dropdown-menu">
-                                        <li class="menu-item"><a href="#">Lorem ipsum</a></li>
-                                        <li class="menu-item"><a href="#">Lorem ipsum</a></li>
-                                        <li class="menu-item"><a href="#">Lorem ipsum</a></li>
-                                        <li class="menu-item"><a href="#">Lorem ipsum</a></li>
-                                        <li class="menu-item"><a href="#">Lorem ipsum</a></li>
-                                        <li class="menu-item"><a href="#">Lorem ipsum</a></li>
-                                        <li class="menu-item"><a href="#">Lorem ipsum</a></li>
-                                    </ul>
-                                </li>
-                                <li class="menu-button">
-                                    <a href="#" data-toggle="dropdown" data-type="title" title="Call to action">Call to action</a>
-
-                                </li>
-                            </ul>
-
-                        </div>
-                        <div class="mobile-menu flex right-5 m-2 absolute ">
-
-                            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                                <i class="fa fa-bars"></i>
-                            </a>
-
-                            <!--
-
-                            <label for="hamburger">&#9776;</label>
-                            <input class="hidden" type="checkbox" id="hamburger" />
-                        -->
-                        </div>
-
-                    </nav>
-
-                </div>
             </div>
-
         </div>
-    </header>
+        <div class="block lg:hidden ">
+            <button class="flex items-center px-3 py-3 border rounded hover:text-black hover:border-grey " id="navbar-btn ">
+            <svg class="fill-current h-3 w-3 " viewBox="0 0 20 20 " xmlns="http://www.w3.org/2000/svg ">
+              <title>Menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z "/>
+            </svg>
+          </button>
+        </div>
+        <div class=" w-full block flex-grow lg:flex lg:items-center lg:w-auto scale-in-top " id="navbar ">
+            <div class="text-sm lg:flex-grow text-center lg:text-right ">
+                <a tabindex="1 " href="#responsive-header " class="block mt-4 lg:inline-grid lg:grid-cols-2 lg:justify-center lg:mt-0 text-black hover:text-grey mr-4 text-lg " tabindex="0 ">
+                    <button>Lorem Ipsum</button>
+                    <img src="https://img.icons8.com/ios-glyphs/30/404f5e/chevron-down.png " style="height:17px; padding:2px; display: inline-flex; padding-top: 5px; " />
+                </a>
+                <a href="#responsive-header " class="block mt-4 lg:inline-grid lg:grid-cols-2 lg:mt-0 text-black hover:text-grey mr-4 text-lg " tabindex="0 ">
+                    <button>Lorem Ipsum</button>
+                    <img src="https://img.icons8.com/ios-glyphs/30/404f5e/chevron-down.png " style="height:17px; padding:2px; display: inline-flex; padding-top: 5px; " />
+                </a>
+
+                <a href="# " class="cta inline-block text-sm px-4 py-3 leading-none border rounded text-white font-black bg-lime-500 border-lime-500 hover:border-lime-200 hover:text-gray-50 hover:bg-black mt-4 lg:mt-0 ml-3 " tabindex="0 "> <button>Call to action</button></a>
+
+                </button>
+            </div>
+        </div>
+        </div>
+
+
+
+    </nav>
+
+
+
     <main>
-        <div class="cont mx-auto">
-            <div class="banner-cont">
-                <h1 class="break-all m-b-5 font-bold">Raxacoricofallapatorius</h1>
+        <div class="cont mx-auto slide-in-blurred-top ">
+            <div class="banner-cont ">
+                <h1 class="break-all m-b-5 font-bold ">Raxacoricofallapatorius</h1>
                 <blockquote class="p-3 "><em>“Look at these people, these human beings. Consider their potential! From the day they arrive on the planet, blinking, step into the sun, there is more to see than can ever be seen, more to do than — no, hold on. Sorry, that's
-                    The Lion King…"
-                </em> </blockquote>
-                <button class="banner-btn"><a href="#" data-type="title" title="Allons-y">Allons-y <img src="https://img.icons8.com/android/15/ffffff/forward.png" style="margin-left: 3px;"/></a></button>
+                    The Lion King…" </em> </blockquote>
+                <button class="banner-btn  font-black"><a class="banner-btn-text"href="#" data-type="title" title="Allons-y">Allons-y <img src="https://img.icons8.com/android/15/ffffff/forward.png" style="margin-left: 3px;"/></a></button>
             </div>
 
             <div class="vid-cont  flex-1   space-y-6 p-4 m-4 flex object-center flex-col justify-center items-center">
@@ -108,10 +83,10 @@
 
         </div>
         <div class="">
-            <div class="card-cont">
+            <div class="card-cont" tabindex="0">
                 <div class="card-cont-inner">
                     <div class="card-header">
-                        <img class="card-img" src="resources/man-wearing-black-zip-up-jacket-near-beach-smiling-at-the-736716.jpg">
+                        <img class="card-img" src="resources/man-wearing-black-zip-up-jacket-near-beach-smiling-at-the-736716.jpg" alt="A man wearing black zip up jacket near beach smiling">
                         <div class="name">
                             <h3>Stephen Strange, MD</h3>
                             <h4>Sorcerer Supreme</h4>
@@ -123,7 +98,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card-cont">
+            <div class="card-cont" tabindex="0">
                 <div class="card-cont-inner">
                     <div class="card-header">
                         <img class="card-img" src="resources/alegria-bonita-bonito-cara-774909.jpg">
@@ -138,10 +113,10 @@
                     </div>
                 </div>
             </div>
-            <div class="card-cont">
+            <div class="card-cont" tabindex="0">
                 <div class="card-cont-inner">
                     <div class="card-header">
-                        <img class="card-img" src="resources/woman-wearing-white-sleeveless-shirt-and-white-denim-shorts-1082962.jpg">
+                        <img class="card-img" src="resources/woman-wearing-white-sleeveless-shirt-and-white-denim-shorts-1082962.jpg" alt="A woman wearing white sleeveless shirt and white denim shorts">
                         <div class="name">
                             <h3>Stephen Strange, MD</h3>
                             <h4>Sorcerer Supreme</h4>
@@ -154,9 +129,9 @@
                 </div>
             </div>
         </div>
-        <div class="sect-cont mx-auto">
+        <div class="sect-cont mx-auto" tabindex="0">
             <div class="sect-cont-inner">
-                <h3>A beginner’s guide to playing Dungeons and Dragons</h3>
+                <h3 class="text-4xl font-black">A beginner’s guide to playing Dungeons and Dragons</h3>
                 <div id="api-cont"></div>
             </div>
         </div>
@@ -165,7 +140,7 @@
     </main>
     <footer>
 
-        <div class="inner-footer">
+        <div class="inner-footer" tabindex="0">
             <div class='footer-item'>
                 <h1>I wanna <wbr>tell you a story</h1>
             </div>
@@ -180,16 +155,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     <script src="./js/script.js"></script>
-    <script>
-        function myFunction() {
-            var x = document.getElementById("prim-menu");
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
-            }
-        }
-    </script>
+ 
 </body>
 
 </html>
